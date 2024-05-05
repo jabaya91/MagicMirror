@@ -1,0 +1,39 @@
+
+> magicmirror@2.27.0 start
+> DISPLAY="${DISPLAY:=:0}" ./node_modules/.bin/electron js/electron.js
+
+[2024-05-01 06:53:21.818] [LOG]   Starting MagicMirror: v2.27.0 
+[2024-05-01 06:53:21.884] [LOG]   Loading config ... 
+[2024-05-01 06:53:21.890] [LOG]   config template file not exists, no envsubst 
+[2024-05-01 06:53:21.902] [LOG]   Loading module helpers ... 
+[2024-05-01 06:53:21.906] [LOG]   No helper found for module: alert. 
+[2024-05-01 06:53:23.006] [LOG]   Initializing new module helper ... 
+[2024-05-01 06:53:23.009] [LOG]   Module helper loaded: updatenotification 
+[2024-05-01 06:53:23.011] [LOG]   No helper found for module: clock. 
+[2024-05-01 06:53:23.655] [LOG]   Initializing new module helper ... 
+[2024-05-01 06:53:23.657] [LOG]   Module helper loaded: calendar 
+[2024-05-01 06:53:23.660] [LOG]   No helper found for module: compliments. 
+[2024-05-01 06:53:23.663] [LOG]   No helper found for module: weather. 
+[2024-05-01 06:53:24.132] [LOG]   Initializing new module helper ... 
+[2024-05-01 06:53:24.134] [LOG]   Module helper loaded: newsfeed 
+[2024-05-01 06:53:24.138] [LOG]   All module helpers loaded. 
+[2024-05-01 06:53:24.169] [LOG]   Starting server on port 8080 ...  
+[2024-05-01 06:53:28.891] [ERROR] Whoops! There was an uncaught exception... 
+[2024-05-01 06:53:28.937] [ERROR] Error: listen EADDRINUSE: address already in use ::1:8080
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:2069:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:8) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::1',
+  port: 8080
+} 
+[2024-05-01 06:53:28.940] [ERROR] MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection? 
+[2024-05-01 06:53:28.942] [ERROR] If you think this really is an issue, please open an issue on GitHub: https://github.com/MagicMirrorOrg/MagicMirror/issues 
+[2024-05-01 06:53:38.566] [INFO]  System information:
+### SYSTEM:   manufacturer: ; model: ; raspberry: undefined; virtual: false
+### OS:       platform: linux; distro: Debian GNU/Linux; release: 12; arch: arm64; kernel: 6.6.20+rpt-rpi-v8
+### VERSIONS: electron: 29.3.1; used node: 20.9.0; installed node: 20.8.0; npm: 10.1.0; pm2: 5.3.1
+### OTHER:    timeZone: Europe/London; ELECTRON_ENABLE_GPU: undefined 
